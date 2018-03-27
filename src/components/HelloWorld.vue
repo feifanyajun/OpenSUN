@@ -5,15 +5,15 @@
     <ul>
       <li>
         <a
-          href="https://vuejs.org"
+          href="http://www.yinwang.org/"
           target="_blank"
         >
-          新浪
+          科研
         </a>
       </li>
       <li>
         <a
-          href="https://forum.vuejs.org"
+          href="https://www.zhihu.com/people/feifanyajun/activities"
           target="_blank"
         >
           知乎
@@ -21,7 +21,7 @@
       </li>
       <li>
         <a
-          href="https://chat.vuejs.org"
+          href="#"
           target="_blank"
         >
           微信
@@ -29,7 +29,7 @@
       </li>
       <li>
         <a
-          href="https://twitter.com/vuejs"
+          href="#"
           target="_blank"
         >
           支付宝
@@ -41,10 +41,10 @@
 
 <script>
 export default {
-  name: 'Hello',
+  name: '双井科技',
   data () {
     return {
-      msg: 'Welcome to Your'
+      msg: '欢迎'
     }
   }
 }
