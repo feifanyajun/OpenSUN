@@ -2,8 +2,33 @@
 <head>
         <meta name="viewport" content="width=device-width, user-scalabel=no">
     <style>
+        header{
+        text-align: center;   
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;    
+        top:0;
+        border-width: 0 0 1px;
+        min-height: 50px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-color: #e7e7e7;   
+        opacity: 0.8;
+        background: white; 
+        background-image: none;
+    background-color: #fff;
+    box-shadow: none;
+    font-size: 100%;
+    top: 0;
+    border-width: 0 0 1px;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent; 
+        }
         .header{
-text-align: center;            
+            z-index: 1029;     
+            border-color: #e7e7e7; 
         }
         .header-img{
             width:50px;
@@ -19,6 +44,8 @@ text-align: center;
         .banner{
             display:flex;
             flex-direction: row;
+            z-index: 1029;
+            border-color: #e7e7e7;    
         }
         .banner-inner{
            display: inline;
@@ -31,32 +58,54 @@ text-align: center;
             text-decoration: none;
         }
         .footer {
-	padding: 25px 0;
-	font-size: 85%;
-	background-color: #2A2A2A;
-	position: fixed;
-	z-index: -1;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-.content{
-    margin:10px;
+            padding: 25px 0;
+            font-size: 85%;
+            background-color: #2A2A2A;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
 }
 .company{
     text-align: center;
     color:white;
 }
+.content{
+    margin-bottom: 20px;
+    padding-left: 0;
+    height:100%;
+    width:100%;
+    overflow: auto;
+    display:flex;
+    flex-direction:row;
+    }
+.centercontent{
+    width:80%; 
+    height:100%;
+    border:1px #e4e4e4 dashed;    
+    background:rgba(202, 220, 238, 0.603);
+    flex:10;
+    margin:2px;
+    padding:10px;
+    }
+.rightcontent{
+    width:19%; 
+    height:100%;
+    border:1px #e4e4e4 dashed;
+    background:#eff0dc;
+    flex:2;
+    margin:2px;
+    padding:10px;
+    }
+
     </style>
 </head>
 <body>
 <header>
-    <div>
-        <img class="header-img" src="http://www.logoquan.com/upload/list/20180104/logoquan15220281581.PNG">
-        <h1 class="header">双井科技</h1>
+    <div class='header'>
+        <img class="header-img" src="./src/assets/logo.png">
         <div class="line"></div>
     </div>
-    </header>
 <div class="banner">
     <div class="banner-inner"><a href="#">首页</a></div>
     <div class="banner-inner"><a href="#">生活</a></div>
@@ -64,12 +113,46 @@ text-align: center;
     <div class="banner-inner"><a href="#">学术</a></div>
     <div class="banner-inner"><a href="#">关于</a></div>
 </div>
+</header>
 <div class="line"></div>
-<div class='content'>
-    空空如也！！！
+<div class="content">
+    <div class="centercontent">
+            <div class="outer">
+                    <ul class="list-group">
+                        
+                        <li class="list-group-item title">
+                            <a href="/blog-cn/2018/03/27/door-etiquette">扶门的礼仪</a>
+                        </li>
+                        
+                        <li class="list-group-item title">
+                            <a href="/blog-cn/2018/03/21/csbook-preface">解谜计算机科学（前言）</a>
+                        </li>
+                        
+                        <li class="list-group-item title">
+                            <a href="/blog-cn/2018/03/08/ciia1">CIIA 苹果报告自觉付费模式</a>
+                        </li>
+                        
+                        <li class="list-group-item title">
+                            <a href="/blog-cn/2018/03/05/book">关于写书</a>
+                        </li>
+                        
+                        <li class="list-group-item title">
+                            <a href="/blog-cn/2018/03/01/truth">真相</a>
+                        </li>
+                        
+                        <li class="list-group-item title">
+                            <a href="/blog-cn/2018/02/26/fired">对某领导离任有感</a>
+                        </li>                                           
+                    </ul>         
+                </div>
+        
+    </div>
+    <div class="rightcontent">
+        <div>我可能不那么勤快的改变这个地方</div>
+    </div>
 </div>
-<div class='footer'>
- <div class='company'>Company Name © 2018</div>
+<div class="footer">
+ <div class="company">twin-well © 2018</div>
 </div>
 </body>
 </html>
